@@ -6,20 +6,36 @@
 	<!-- Embedded styles. These will apply to our HTML -->
 	<style>
 		/* Styles to come... */
+		body{
+			margin: 0px;
+		}
 		#gallery-wrapper{
 			text-align: center;
+			width: 80%;
+			margin: auto;
 		}
 /* 		h1{
 			text-align: left;
 		} */
 		.thumb{
-			width: 15%;
-			/* width: 1000px; */
+			/* width: 15%; */
+			width: 100%;
 			border:  4px solid #0f0;
 		}
 		img{
 			/* width: 1000px !important; */
 			width: 1000px;
+		}
+		#left-section{
+			width: 19%;
+			/* float: left; */
+			display: inline-block
+		}
+		#right-section{
+			width: 80%;
+			/* float: left; */
+			display: inline-block;
+			vertical-align: top;
 		}
 
 
@@ -33,8 +49,9 @@
 		<div id="top-section">
 			<h1>A photo gallery made with CSS, HTML, and a tiny bit of JS and lot of love.</h1>
 		</div>
-		<!-- MIDDLE SECTION -->
-		<div id="middle-section">
+
+		<!-- Right SECTION -->
+		<div id="left-section">
 			<!-- <h1>Middle Section</h1> -->
 			<img class="thumb" src="./ga_pics/arabia_mnt.jpg" onclick="bigPic.src = this.src" />
 			<img class="thumb" src="./ga_pics/callaway_gardens.jpg" onclick="bigPic.src = this.src" />
@@ -42,11 +59,14 @@
 			<img class="thumb" src="./ga_pics/prov_state_canyon.jpg"  onclick="bigPic.src = this.src" />
 			<img class="thumb" src="./ga_pics/wormsloe.jpg" onmousehover="bigPic.src = this.src" />
 		</div>
-		<!-- BOTTOM SECTION -->
-		<div id="bottom-section">
+
+		<!-- Left SECTION -->
+		<div id="right-section">
 			<!-- <h1>Bottom Section</h1> -->
 			<img src="./ga_pics/prov_state_canyon.jpg" name="bigPic"/>
 		</div>
+
+
 		<div></div>
 	</div>
 
